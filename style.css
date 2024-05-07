@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5ff; /* Ljubičasta pozadina */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto; /* Centriranje horizontalno */
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: bold;
+    color: #009900; /* Tamno zelena boja za naslov */
+  }
+  
+  .celebrities {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centriranje vertikalno */
+    gap: 20px;
+  }
+  
+  .celebrity {
+    display: flex;
+    align-items: center; /* Centriranje vertikalno */
+  }
+  
+  .celebrity img {
+    max-width: 200px; /* Postavljamo maksimalnu širinu slike na 200 piksela */
+    height: auto; /* Visina će biti automatski prilagođena kako bi zadržala proporcije */
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .before-after-button {
+    background-color: #32cd32; /* Zelena boja za dugme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .before-after-button:hover {
+    background-color: #228b22;
+  }
+
+/* Dodati CSS kod za pop-up prozor ispod originalnog CSS koda */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Tamna pozadina */
+  display: none; /* Početno sakrivanje */
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.popup-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.close-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #c0392b;
+}
